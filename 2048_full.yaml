@@ -20,7 +20,7 @@ spec:
         app.kubernetes.io/name: app-2048
     spec:
       containers:
-      - image: thipparthiavinash/2048-game:latest
+      - image: kagesh4u/myrepo:myweb
         imagePullPolicy: Always
         name: app-2048
         ports:
