@@ -37,7 +37,6 @@ spec:
       targetPort: 80
       protocol: TCP
       nodeport: 30001 
-  sessionAffinity: None
   type: NodePort
 
 
