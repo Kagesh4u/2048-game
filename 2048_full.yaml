@@ -20,7 +20,7 @@ spec:
         app.kubernetes.io/name: app-2048
     spec:
       containers:
-      - image: kagesh4u/myrepo:myweb
+      - image: kagesh4u/myrepo:v2
         imagePullPolicy: Always
         name: app-2048
         ports:
