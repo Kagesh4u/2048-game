@@ -13,7 +13,7 @@ spec:
   selector:
     matchLabels:
       app.kubernetes.io/name: app-2048
-  replicas: 3
+  replicas: 2
   template:
     metadata:
       labels:
@@ -36,6 +36,8 @@ spec:
     - port: 80
       targetPort: 80
       protocol: TCP
+      nodeport: 30001 
+  sessionAffinity: None
   type: NodePort
   selector:
     app.kubernetes.io/name: app-2048
