@@ -20,7 +20,20 @@ spec:
     spec:
       containers:
       - name: 2048-container
-        image: kagesh4u/myrepo:myweb
+        image: 982424467695.dkr.ecr.ap-south-1.amazonaws.com/game-2048-awar06:latest
         ports:
         - containerPort: 80
+  ---
+apiVersion: v1
+kind: Service
+metadata:
+  name: game-2048-service
+spec:
+  selector:
+    app: 2048-game
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: LoadBalancer
 
