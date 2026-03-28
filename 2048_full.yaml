@@ -25,8 +25,8 @@ spec:
         ## image: thipparthiavinash/2048-game
         ports:
         - containerPort: 80
-        resources:
-          limits:
+      resources:
+        limits:
             memory: "128Mi"
             cpu: "500m"
         requests:
